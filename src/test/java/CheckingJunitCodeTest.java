@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class CheckingJunitCodeTest {
 
     @Test
-   void checkingTextSoftAssertions() {
+    void checkingTextSoftAssertions() {
         open("https://github.com/selenide/selenide");
         $("#wiki-tab").click();
         $(".markdown-body").shouldHave(text("Soft assertions"));
